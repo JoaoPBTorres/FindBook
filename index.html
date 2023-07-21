@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindBooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo"> Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Literatura e comportamento</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Técnicos e profissionais</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Equilíbrio Pessoal</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Periódicos</a>
+                </li>
+            </ul>
+            <img src="assets/find+ logo azul.png" alt="Logo FindBooks" height="40" width="60" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Find</b>Books</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Literatura e comportamento</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Técnicos e profissionais</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Equilíbrio Pessoal</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Periódicos</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos" 
+                    class="container__imagem container__imagem-transparente">
+            </a>
+            <a href="#" class="container__link">
+                <img src="assets/Compras.svg" alt="Carrinho de compra" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="assets/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre na nossa estante o que você precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será a sua proxima leitura?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/cancoesdeumsonhadormortoeescribasinistro.jpg"
+                            alt="Canções sobre um sonhador morto"></div>
+                    <div class="swiper-slide"><img src="assets/CartografiaDosAfetos.jpg" 
+                            alt="Cartografia dos afetos"></div>
+                    <div class="swiper-slide"><img src="assets/OPoderDoFocoInabalavel.jpg" 
+                            alt="O poder do foco inabalável"></div>
+                    <div class="swiper-slide"><img src="assets/ateosossos.jpg" 
+                            alt="Até os ossos"></div>
+                    <div class="swiper-slide"><img src="assets/OArqueiro.jpg" 
+                            alt="O arqueiro"></div>
+                    <div class="swiper-slide"><img src="assets/OReiDeAmarelo.png" 
+                            alt="O rei de amarelo"></div>
+                    <div class="swiper-slide"><img src="assets/OReiDeAmareloHQ.png"
+                            alt="HQ O rei de amarelo"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1 linha -->
+                <div class="card__descricao">
+                    <!-- 1 coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Salvar o fogo</h2>
+                        <p class="desccricao__texto">Uma emocionante incursão na alma do povo brasileiro.</p>
+                    </div>
+                    <!-- 2coluna -->
+                    <img src="assets/salvar o fogo.jpg" class="descricao__imagem">
+                </div>
+
+                <!-- 2 linha -->
+                <div class="card__botoes">
+                    <!-- 1 coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="assets/Favoritos.svg" alt="favoritar livro"></li>
+                        <li class="botoes__item"><img src="assets/Compras.svg" alt="adicionar no carrinho de compra"></li>
+                    </ul>
+                    <!-- 2 coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>    
+            </div>
+        </div>
+    </section>
+    
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/O avesso da pele.jpg"
+                            alt="O avesso da pele"></div>
+                    <div class="swiper-slide"><img src="assets/Memorias do subsolo.jpg"
+                            alt="Memórias do subsolo"></div>
+                    <div class="swiper-slide"><img src="assets/A mulher ruiva.jpg"
+                            alt="A mulher ruiva"></div>
+                    <div class="swiper-slide"><img src="assets/Na terra e no ceu.jpg"
+                            alt="Na terra e no céu"></div>
+                    <div class="swiper-slide"><img src="assets/Negocie sem medo.jpg" 
+                            alt="Negocie sem medo"></div>
+                    <div class="swiper-slide"><img src="assets/O cortiço.jpg" 
+                            alt="O cortiço"></div>
+                    <div class="swiper-slide"><img src="assets/O pequeno principe.jpg" 
+                            alt="O pequeno príncipe"></div>
+                    <div class="swiper-slide"><img src="assets/Ventos do apocalipse.jpg" 
+                            alt="Ventos do apocalipse"></div>                                                
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1 linha -->
+                <div class="card__descricao">
+                    <!-- 1 coluna -->
+                    <div class="desccricao">
+                        <img src="assets/Estrelinhas.svg" alt="cinco estrelas">
+                        <h3 class="descricao__titulo">Altora do mês</h3>
+                        <h2 class="descricao__titulo-livro autor">Holly Jackson</h2>
+                        <p class="descricao__texto">Autora da serie de livros best seller MANUAL DE ASSASSINATO PARA BOAS GAROTAS com milhoes de copias vendidas</p>
+                    </div>
+                    <!-- 2 coluna -->
+                    <img src="assets/HollyJackson.jpeg" class="descricao__imagem" height="166px" width="161px">
+                </div>
+                
+                <!-- 2 linha -->
+                <div class="card__botoes">
+                    <!-- 1 coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="assets/Favoritos.svg" alt="Favoritar autora"></li>
+                    </ul>
+                    <!-- 2 coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>    
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="temas">
+        <h2 class="temas__titulo">TEMAS VISITADOS RECENTEMENTE</h2>
+        <ul class="temas__lista">
+            <li class="temas__item">
+                <a href="#" class="temas__link">Heroísmo</a>
+            </li>
+            <li class="temas__item">
+                <a href="#" class="temas__link">Amadurecimento</a>
+            </li>
+            <li class="temas__item">
+                <a href="#" class="temas__link">Amor</a>
+            </li>
+            <li class="temas__item">
+                <a href="#" class="temas__link">Bem e mal</a>
+            </li>
+            <li class="temas__item">
+                <a href="#" class="temas__link">Sobrevivência</a>
+            </li>
+            <li class="temas__item">
+                <a href="#" class="temas__link">Paz e guerra</a>
+            </li>                        
+            <li class="temas__item">
+                <a href="#" class="temas__link">Círculo da vida</a>
+            </li>            
+            <li class="temas__item">
+                <a href="#" class="temas__link">Julgamento</a>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Find</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Conheça-nos</li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Sobre Nós</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Informações Comporativas</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Política de Privacidade</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Atendimento ao Cliente</li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Central de Ajuda</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Métodos de pagamento</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Devolução e Reembolso</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Fale conosco</a>
+            </li>
+             <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Ouvidoria</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Siga-nos</li>
+            <li class="lista-rodape__item">
+                <img src="assets/instagram.png" alt="logo do instagram">
+                <a href="#" class="lista-rodape__link">Instagram</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="assets/linkedin.png" alt="Logo LinkedIn">
+                <a href="#" class="lista-rodape__link">LinkedIn</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="assets/twitter.png" alt="logo do  Twitter">
+                <a href="#" class="lista-rodape__link">Twitter</a>
+            </li>
+        </ul>
+    </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
